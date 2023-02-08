@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  height: 80px;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 180px;
+  position: fixed;
+  /* 固定することでレイアウトが崩れるため横幅を画面サイズに合わせる */
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.8)
+}
+
+header p {
+  font-size: 24px;
+  font-weight: bold;
+  /* 高さに合わせて設定すれば文字が垂直方向に中央寄る */
+  line-height: 80px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+header a {
+  font-size: 16px;
+  font-weight: bold;
+  width: 150px;
+}
+
+header a:hover {
+  border-bottom: 6px double #000;
+}
+
+footer {
+  height: 80px;
+  background-color: #edece7;
+  line-height: 80px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.firstView {
+  background-image: url(images/america1.NEF.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.firstView h1 {
+  font-size: 64px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-shadow: 3px 3px 3px #000;
+  padding-top: 320px;
+}
+
+.firstView p {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.about {
+  padding: 180px;
+}
+
+.profile h2 {
+  font-size: 64px;
+  letter-spacing: 0.1em;
+  border-bottom: 6px double #000;
+  display: inline-block;
+}
+
+.profile h3 {
+  font-size: 24px;
+  margin-top: 72px;
+  letter-spacing: 0.1em;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 24px;
+  line-height: 24px;
+}
+
+.profile p span {
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.profile img {
+  width: 460px;
+  height: 260px;
+  border-radius: 15px;
+  margin-left: 100px;
+  margin-top: 90px;
+}
+
+.profile .profile-text {
+  width: 500px;
+  float: left;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.favorite {
+  text-align: center;
+  padding: 180px 180px 240px;
+  background-image: url(images/hamasuta_spring.JPG);
+  background-size: cover;
+}
+
+.favorite h2 {
+  font-size: 64px;
+  color: #fff;
+  letter-spacing: 0.1em;
+  border-bottom: 6px double #fff;
+  display: inline-block;
+}
+
+.favorite-contents {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.favorite-content {
+  width: 320px;
+  padding: 40px;
+  /* 0.8は透明度80% */
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+}
+
+.favorite-content img {
+  /* 中央で画像の縦横比を維持したままトリミングできる */
+  object-fit: cover;
+}
+
+.favorite-content h3 {
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.favorite-content p {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 32px;
+}
+
+.favorite-content .sn {
+  color: #000;
+  text-shadow: 2px 2px 2px #b9eae6;
+}
+
+.favorite-content .hihi {
+  color: #000;
+  text-shadow: 2px 2px 2px #f4c81f;
+}
+
+.favorite-content .ppppphm {
+  color: #000;
+  text-shadow: 2px 2px 2px #8c7eb9;
+}
+
+.favorite-content a:hover {
+  border-bottom: 1px solid #000;
+}
+
+.favorite-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.works {
+  padding: 180px;
+  text-align: center;
+  background-color: #faf5fa;
+}
+
+.works h2 {
+  font-size: 64px;
+  letter-spacing: 0.1em;
+  border-bottom: 6px double #ff74b1;
+  display: inline-block;
+  margin-bottom: 80px;
+}
+
+.works-content-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.works-content {
+  /* 450pxの要素が画面横幅超えるとflex-wrapが動作して子要素が折り返す */
+  flex-basis: 450px;
+  background-color: #fff;
+  margin: 40px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.works-content img {
+  width: 320px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.works-text {
+  padding: 30px;
+}
+
+.works-content h3 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.works-content span {
+  font-size: 16px;
+}
+
+.works-content p {
+  text-align: left;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.contact {
+  padding: 180px 350px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 64px;
+  letter-spacing: 0.1em;
+  border-bottom: 6px double #ff9900;
+  display: inline-block;
+}
+
+.contact p {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  text-align: center;
+  margin-top: 48px;
+}
+
+.contact .sns {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact a {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 200px;
+  line-height: 80px;
+  display: inline-block;
+  border-radius: 16px;
+  transition: all 0.8s ease 0s;
+}
+
+.contact a:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.8s;
+}
+
+.contact .sns-twitter {
+  background-color: #00acee;
+}
+
+.contact .sns-facebook {
+  background-color: #3b5998;
+}
+
+.contact .sns-website {
+  background-color: #CF2E92;
+}
