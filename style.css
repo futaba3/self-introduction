@@ -13,6 +13,7 @@ a {
 
 header {
   height: 80px;
+  /* 高さに合わせて設定すれば文字が垂直方向に中央寄る */
   line-height: 80px;
   display: flex;
   justify-content: space-between;
@@ -302,4 +303,10 @@ footer {
 
 .contact .sns-website {
   background-color: #CF2E92;
+}
+
+/* ここまで共通 */
+
+@media all and (max-width: 480px) {
+  
 }
